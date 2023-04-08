@@ -27,7 +27,7 @@ const AddEntryForm = (props) => {
         />
 
         <
-        label > Date < /label> <
+        label > Date < /label>  <
         input type = "date"
         value = { date }
         onChange = {
@@ -36,7 +36,7 @@ const AddEntryForm = (props) => {
         />
 
         <
-        button type = "submit" > Add < /button> < /
+        button type = "submit" > Add < /button>  < /
         form >
     )
 };
