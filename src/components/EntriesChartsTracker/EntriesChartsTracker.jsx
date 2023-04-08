@@ -21,6 +21,8 @@ const EntriesChartTracker = (props) => {
         }
         width = "100%"
         height = "400px"
+        options = {
+            { legend: { position: "bottom" } } }
         legendToggle /
         >
     );

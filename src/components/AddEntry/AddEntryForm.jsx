@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './AddEntryform.css'
 
 const AddEntryForm = (props) => {
     const [weight, setWeight] = useState(0);
@@ -16,10 +17,14 @@ const AddEntryForm = (props) => {
     };
 
     return ( <
-        form onSubmit = { handleSubmit } >
+        form onSubmit = { handleSubmit }
+        className = 'form-grid' >
+        <
+        div className = 'form-group' >
         <
         label > Weight < /label> <
         input type = "number"
+        className = "form-control"
         value = { weight }
         onChange = {
             (event) => setWeight(event.target.value)
@@ -27,17 +32,23 @@ const AddEntryForm = (props) => {
         />
 
         <
-        label > Date < /label>  <
+        /div> <
+        div className = 'form-group' >
+        <
+        label > Date < /label> <
         input type = "date"
+        className = "form-control"
         value = { date }
         onChange = {
             (event) => setDate(event.target.value)
         }
-        />
-
-        <
-        button type = "submit" > Add < /button>  < /
-        form >
+        /> <
+        /div> <
+        button type = "submit"
+        className = "btn btn-primary"
+        style = {
+            { 'margin-top': '1em' } } > Add < /button> <
+        /form>
     )
 };
 
